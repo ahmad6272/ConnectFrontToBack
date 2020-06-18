@@ -1,0 +1,328 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <main>
+        <!-- begin slider -->
+        <div id="slider">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner slide">
+                    @foreach (Slider Img in Model.Sliders)
+                    {
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="~/image/slider/@Img.Image" alt="">
+                    </div>
+                    }
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="text offset-1">
+                <div class="title col-4">
+                    <span>@Model.Content.Title</span>
+                </div>
+                <div class="about col-5 mt-3">
+                    @Model.Content.Description
+                </div>
+                <img class="col-3 mt-3" src="~/image/siggadge/@Model.Content.Image" alt="">
+            </div>
+        </div>
+        <!-- finish slider -->
+
+        <!-- begin shelf -->
+        <div class="container">
+            <div class="row">
+                <div id="shelf" class="mt-5 ml-4">
+                    <div class="menu">
+                        <ul>
+                            <li><a style="color: red;" href="#">ALL</a></li>
+                            @foreach (Category category in Model.Categories)
+                            {
+                                <li><a href="#">@category.Name</a></li>
+                            }
+
+                            <li class="filter">
+                                <button class="border-0 bg-white ml-4">
+                                    FILTER <i class="fas fa-caret-down"></i>
+                                </button>
+                                <div class="filter_menu elm-collapsed" style="width: 400px; left: -200px;">
+                                    <div class="drop_filter_menu">
+                                        <div class="d-flex justify-content-around">
+                                            <h5>
+                                                Sort By
+                                                <ul class="mt-2 d-flex flex-column" style="width: 200px;">
+                                                    <li><a href="#">Default</a></li>
+                                                    <li><a href="#">Popularity</a></li>
+                                                    <li><a href="#">Newness</a></li>
+                                                    <li><a href="#">Price: Low to High</a></li>
+                                                    <li><a href="#">Price: High to Low</a></li>
+                                                </ul>
+                                            </h5>
+                                            <h5>
+                                                Price Range
+                                                <ul class="mt-3 w-50">
+                                                    <li><a href="#">All</a></li>
+                                                    <li><a href="#">$0-$10</a></li>
+                                                    <li><a href="#">$10-$20</a></li>
+                                                    <li><a href="#">$20-$30</a></li>
+                                                    <li><a href="#">$30-$40</a></li>
+                                                    <li><a href="#">40$+</a></li>
+                                                </ul>
+                                            </h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                @await Component.InvokeAsync("Products",8);
+
+            </div>
+        </div>
+        <!-- finish shelf -->
+        <!-- begin video sector -->
+        <div class="sector mt-5 w-100 ">
+            <div id="video" class="d-flex justify-content-around">
+                <div class="video mt-5 ml-5 mb-5">
+                    <div>
+                        <a href="https://www.youtube.com/watch?time_continue=1&v=K-0cjGCNYfs&_ga=2.216219158.1019964864.1577644513-755624442.1577198553"
+                            class="glightbox2">
+                            <img width="550px" height="356px" src="~/image/video/h3-video-img.jpg" alt="">
+                            <div class="play">
+                                <span>
+                                    <div class="block"></div>
+                                </span>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="text">
+                    <div class="title">
+                        <h2>Surprise Your
+                            <span style="color: red;">Valentine</span><br>
+                            Let us arrange a smile.
+                        </h2>
+                        <p class="mt-3">
+                            Where flowers are our inspiration to create lasting<br>
+                            memories. Whatever the occasion...
+                        </p>
+                        <div class="comments">
+                            <div class="first d-flex flex-row">
+                                <img class="mt-1" style="height: 100%;" src="~/image/heart/h1-custom-icon.png" alt="">
+                                <p class="ml-3">Hand picked just for you.</p>
+                            </div>
+                            <div class="second d-flex flex-row">
+                                <img class="mt-1" style="height: 100%;" src="~/image/heart/h1-custom-icon.png" alt="">
+                                <p class="ml-3">Unique flower arrangements.</p>
+                            </div>
+                            <div class="third d-flex flex-row">
+                                <img class="mt-1" style="height: 100%;" src="~/image/heart/h1-custom-icon.png" alt="">
+                                <p class="ml-3">Best way to say you care.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- finish video secror -->
+        <!-- begin experts -->
+        <section id="experts">
+            <div class="text text-center">
+                <h2>Flower Experts</h2>
+                <p class="mt-4">A perfect blend of creativity, energy, communication, happiness<br> and love. Let us
+                    arrange a smile for you.
+                </p>
+            </div>
+            <div class="people ml-4 d-flex justify-content-around">
+                <div class="card-deck mt-5">
+                    <div class="card border-0">
+                        <img class="w-100" src="~/image/experts/h3-team-img-1.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h6 class="card-title">CRYSTAL BROOKS</h6>
+                            <p class="card-text">Florist</p>
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <img class="w-100" src="~/image/experts/h3-team-img-2.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h6 class="card-title">SHIRLEY HARRIS</h6>
+                            <p class="card-text">Manager</p>
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <img class="w-100" src="~/image/experts/h3-team-img-3.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h6 class="card-title">BEVERLY CLARK</h6>
+                            <p class="card-text">Florist</p>
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <img class="w-100" src="~/image/experts/h3-team-img-4.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h6 class="card-title">AMANDA WATKINS</h6>
+                            <p class="card-text">Florist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- finish experts -->
+        <!-- begin info -->
+        <section id="info">
+            <div class="backg w-100 h-100">
+                <h3 style="color: #ffffff;">Join The Colorful Bunch!</h3>
+                <div class="search d-flex col-9 justify-content-center mr-3 offset-2">
+                    <input class="border-0 col-5" type="email">
+                    <button class="border-0 col-2">SUBSCRIBE</button>
+                </div>
+            </div>
+        </section>
+        <!-- finish info -->
+        <!-- begin blog -->
+        <section id="blog">
+            <div class="about_blog">
+                <h2 class="text-center">From our Blog</h2>
+                <p class="text-center">A perfect blend of creativity, energy, communication, happiness <br>and love. Let
+                    us arrange a smile for
+                    you.
+                </p>
+            </div>
+            <div class="news d-flex justify-content-center col-12 w-100 mt-5">
+                <div class="card mr-3 border-0 mb-5" style="width: 22rem;">
+                    <img class="card-img-top" src="~/image/blog/blog-feature-img-1-800x511.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="text-center">Flower Power</h5>
+                        <p class="card-text text-center">Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per</p>
+                    </div>
+                </div>
+                <div class="card mr-3 border-0" style="width: 22rem;">
+                    <img src="~/image/blog/blog-feature-img-3-800x511.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="text-center">Local Florists</h5>
+                        <p class="card-text text-center">Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per</p>
+                    </div>
+                </div>
+                <div class="card mr-3 border-0" style="width: 22rem;">
+                    <img src="~/image/blog/blog-feature-img-4-1024x654.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="text-center">Flower Beauty</h5>
+                        <p class="card-text text-center">Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- finish blog -->
+        <!-- begin workers slider -->
+        <section id="workers" class="offset-4 col-5 d-flex justify-content-center">
+            <div id="carouselExampleCaptions" class="carousel slide mb-5" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <img src="~/image/workers/testimonial-img-1.png" class="d-block" alt="...">
+                        <div class="about d-none d-md-block mt-4">
+                            <p class="text-center mb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget.</p>
+                            <span class="text-center">JASMINE WHITE</span><br>
+                            <span class="text-center">Florist</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="~/image/workers/testimonial-img-2.png" class="d-block" alt="...">
+                        <div class="about d-none d-md-block mt-4">
+                            <p class="text-center mb-5">Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+                                Cras dapibus lingua. </p>
+                            <span class="text-center">ANNA BARNES</span><br>
+                            <span class="text-center">Florist</span>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden=""></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden=""></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <!-- finish workers slider -->
+        <!-- start instagram pictures -->
+        <div id="instagram" class="mt-5">
+            <div class="container mx-0 px-0">
+                <div class="row mx-0 px-0">
+                    <div class="pictures d-flex justify-content-around">
+                        <a href="https://www.instagram.com/p/BiCEkWiHtWb/">
+                            <img src="~/image/instagram_photo/1.jpg" alt="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/p/BiCEimEHlK_/?_ga=2.242955010.1019964864.1577644513-755624442.1577198553">
+                            <img src="~/image/instagram_photo/2.jpg" alt="">
+                            <span class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                        </a>
+                        <a href="https://www.instagram.com/p/BiCEenznP2O/">
+                            <img src="~/image/instagram_photo/3.jpg" alt="">
+                            <span class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                        </a>
+                        <a href="https://www.instagram.com/p/BiCD-suH5SW/">
+
+                            <img src="~/image/instagram_photo/4.jpg" alt="">
+                            <span class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                        </a>
+                        <a href="https://www.instagram.com/p/BiCD7IinlaR/">
+
+                            <img src="~/image/instagram_photo/5.jpg" alt="">
+                            <span class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                        </a>
+                        <a href="https://www.instagram.com/p/BiCD5XnnjdU/">
+
+                            <img src="~/image/instagram_photo/6.jpg" alt="">
+                            <span class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                        </a>
+                        <a href="https://www.instagram.com/p/BiCD1bKnxer/">
+
+                            <img src="~/image/instagram_photo/7.jpg" alt="">
+                            <span class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/p/BiCDy4wHeJl/?_ga=2.204150288.1019964864.1577644513-755624442.1577198553">
+
+                            <img src="~/image/instagram_photo/8.jpg" alt="">
+                            <span class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                        </a>
+                        <div class="hashdag">
+                            <span>#Fiorella</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- finish instagram pictures -->
+    </main>

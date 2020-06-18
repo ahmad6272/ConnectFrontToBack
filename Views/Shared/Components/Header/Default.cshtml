@@ -1,0 +1,153 @@
+﻿@model Bio
+<header>
+    <!-- begin navbar -->
+    <div class="container mt-5 mb-4">
+        <nav>
+            <div class="row col-12">
+                <!-- logo -->
+                <div class="logo col-3 px-0 mx-0">
+                    <a href="final.html">
+                        <img class="w-100" src="~/image/logo/@Model.Logo">
+                    </a>
+                </div>
+                <!-- menu -->
+                <div id="menu" class="col-9 px-0 mx-0">
+                    <ul class="menu">
+                        <li class="nav-elm-item home">
+                            <a href="#">HOME</a>
+                            <div class="home_menu elm-collapsed">
+                                <div class="drop_home_menu">
+                                    <ul>
+                                        <li><a href="#">Main Home</a></li>
+                                        <li><a href="#">Grid Home</a></li>
+                                        <li><a href="#">Flower Shop</a></li>
+                                        <li><a href="#">Animated Slider</a></li>
+                                        <li><a href="#">Metro Showcase</a></li>
+                                        <li><a href="#">Carousel</a></li>
+                                        <li><a href="#">Landing</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-elm-item page">
+                            <a href="#">PAGES</a>
+                            <div class="page_menu elm-collapsed">
+                                <div class="drop_pages_menu">
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">FAQ Page</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-elm-item shop">
+                            <a href="#">SHOP</a>
+                            <div class="shop_menu elm-collapsed" style="width: 1100px; left: -500px;">
+                                <div class="drop_shop_menu">
+                                    <div class="d-flex justify-content-around">
+                                        <h5>
+                                            Product Types
+                                            <ul class="mt-3">
+                                                <li><a href="#">Standard Product</a></li>
+                                                <li><a href="#">Grouped Product</a></li>
+                                                <li><a href="#">Variable Product</a></li>
+                                                <li><a href="#">Virtual Product</a></li>
+                                                <li><a href="#">External Product</a></li>
+                                                <li><a href="#">Downloadable Product</a></li>
+                                                <li><a href="#">On Sale Product</a></li>
+                                                <li><a href="#">Out Of Stock Product</a></li>
+                                                <li><a href="#">New Product</a></li>
+
+                                            </ul>
+                                        </h5>
+                                        <h5>
+                                            Shop Pages
+                                            <ul class="mt-3">
+                                                <li><a href="#">My Accaunt</a></li>
+                                                <li><a href="#">Cart</a></li>
+                                                <li><a href="#">Checkout</a></li>
+                                                <li><a href="#">Orders</a></li>
+                                                <li><a href="#">Downloads</a></li>
+                                            </ul>
+                                        </h5>
+                                        <h5>
+                                            Shop Types
+                                            <ul class="mt-3">
+                                                <li><a asp-controller="Product" asp-action="Index">Product List</a></li>
+                                                <li><a href="#">Without Slidebar</a></li>
+                                                <li><a href="#">With Category Filter</a></li>
+                                                <li><a href="#">With Ordering Filter</a></li>
+                                                <li><a href="#">Shop Carousel</a></li>
+                                                <li><a href="#">Product Categories</a></li>
+                                                <li><a href="#">Single Category</a></li>
+                                            </ul>
+                                        </h5>
+                                        <h5>
+                                            Shop Layouts
+                                            <ul class="mt-3">
+                                                <li><a href="#">Two Columns Grid</a></li>
+                                                <li><a href="#">Three Columns Grid</a></li>
+                                                <li><a href="#">Four Columns Grid</a></li>
+                                                <li><a href="#">Four Columns Wide</a></li>
+                                                <li><a href="#">Five Columns Wide</a></li>
+                                                <li><a href="#">Six Columns Wide</a></li>
+                                            </ul>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-elm-item portfolio">
+                            <a href="#">PORTFOLIO</a>
+                            <div class="portfolio_menu elm-collapsed">
+                                <div class="drop_portfolio_menu">
+                                    <ul>
+                                        <li><a href="#">Standard</a></li>
+                                        <li><a href="#">Gallery</a></li>
+                                        <li><a href="#">Masonly</a></li>
+                                        <li><a href="#">Portfolio Layouts</a></li>
+                                        <li><a href="#">Partfolio Single</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-elm-item blog">
+                            <a href="#">BLOG</a>
+                            <div class="blog_menu elm-collapsed">
+                                <div class="drop_blog_menu">
+                                    <ul>
+                                        <li><a href="#">Masonry</a></li>
+                                        <li><a href="#">Standart</a></li>
+                                        <li><a href="#">Post Types</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-elm-item elm">
+                            <a href="#">ELEMENTS</a>
+                            <div class="elements_menu elm-collapsed">
+                                <div class="drop_elements_menu">
+                                    <ul>
+                                        <li><a href="#">Classic</a></li>
+                                        <li><a href="#">Infographic</a></li>
+                                        <li><a href="#">Interactive</a></li>
+                                        <li><a href="#">Typography</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-elm-item search"> <i class="fas fa-search"></i> </li>
+                        <li class="nav-elm-item shopping_bag">
+                            <i class="fas fa-shopping-bag"></i>
+                            <a href="">CART($0)</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <!-- end navbar -->
+</header>

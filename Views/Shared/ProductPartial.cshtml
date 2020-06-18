@@ -1,0 +1,24 @@
+﻿@model IEnumerable<ProductVM>
+
+    <div class="cell d-flex justify-content-around  flex-wrap col-12 mt-3">
+        @foreach (ProductVM product in Model)
+        {
+            <div class="card card_one border-0" style="width: 15rem; height: 19.5rem;">
+                <div class="image">
+                    <a href="#">
+                        <img width="245" height="346" src="~/image/cards images/@product.Image"
+                             class="card-img-top" alt="...">
+                    </a>
+                </div>
+                <div class="card-body one">
+                    <h6 class="text-center"><a href="#">@product.Title</a></h6>
+                    <div class="cash text-center">
+                        <div class="add_to_card show">
+                            <a href="#">Add To Card</a>
+                        </div>
+                        <span>$@product.Price</span>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
