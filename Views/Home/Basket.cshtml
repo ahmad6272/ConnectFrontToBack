@@ -1,0 +1,49 @@
+﻿@model IEnumerable<ProductBasketVM>
+@{
+    ViewData["Title"] = "Basket";
+}
+
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Basket List</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Image
+                                </th>
+                                <th>
+                                    Setting
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (ProductBasketVM product in Model)
+                            {
+                                <tr>
+                                    <td class="py-1">
+                                        <img src="~/image/product list/@product.Image" style="width:80px !important; height:80px !important; border-radius:0 !important" alt="image" />
+                                    </td>
+                                    <td>
+                                        <a asp-action="Detail" asp-route-id="@product.Id" class="btn btn-success">
+                                            <i class="mdi mdi-account-card-details"></i>
+                                        </a>
+                                        <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-primary">
+                                            <i class="mdi mdi-table-edit"></i>
+                                        </a>
+                                        <a asp-action="Delete" asp-route-id="@product.Id" class="btn btn-danger">
+                                            <i class="mdi mdi-delete-variant"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

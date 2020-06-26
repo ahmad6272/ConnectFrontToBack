@@ -5,13 +5,13 @@
         <nav>
             <div class="row col-12">
                 <!-- logo -->
-                <div class="logo col-3 px-0 mx-0">
+                <div class="logo col-2 px-0 mx-0">
                     <a href="final.html">
                         <img class="w-100" src="~/image/logo/@Model.Logo">
                     </a>
                 </div>
                 <!-- menu -->
-                <div id="menu" class="col-9 px-0 mx-0">
+                <div id="menu" class="col-10 px-0 mx-0">
                     <ul class="menu">
                         <li class="nav-elm-item home">
                             <a href="#">HOME</a>
@@ -137,10 +137,13 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-elm-item search"> <i class="fas fa-search"></i> </li>
+                        <li class="nav-elm-item search "> <i class="fas fa-search"></i> </li>
                         <li class="nav-elm-item shopping_bag">
-                            <i class="fas fa-shopping-bag"></i>
-                            <a href="">CART($0)</a>
+                            <a class="pr-1" asp-controller="Home" asp-action="Basket">
+                                <i class="fas fa-shopping-bag"></i>
+                            </a>
+                            <sup class="rounded-circle">@ViewBag.BasketCount</sup>
+                            <a href="">CART($@ViewBag.BasketPrice)</a>
                         </li>
                     </ul>
 

@@ -12627,11 +12627,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ahmad Dadashzada\\source\\repos\\ConnectFrontToBack\\ConnectFrontToBack.csproj",
+      "projectUniqueName": "C:\\Users\\Ahmad Dadashzada\\Desktop\\ConnectFrontToBack\\ConnectFrontToBack.csproj",
       "projectName": "ConnectFrontToBack",
-      "projectPath": "C:\\Users\\Ahmad Dadashzada\\source\\repos\\ConnectFrontToBack\\ConnectFrontToBack.csproj",
+      "projectPath": "C:\\Users\\Ahmad Dadashzada\\Desktop\\ConnectFrontToBack\\ConnectFrontToBack.csproj",
       "packagesPath": "C:\\Users\\Ahmad Dadashzada\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ahmad Dadashzada\\source\\repos\\ConnectFrontToBack\\obj\\",
+      "outputPath": "C:\\Users\\Ahmad Dadashzada\\Desktop\\ConnectFrontToBack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ahmad Dadashzada\\AppData\\Roaming\\NuGet\\NuGet.Config",

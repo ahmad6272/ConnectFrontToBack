@@ -183,15 +183,15 @@
                         </a>
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" asp-area="Admin" asp-controller="Slider" asp-action="Index">Sliders List</a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-area="Admin" asp-controller="Slider" asp-action="Index">Sliders List</a></li>                          
                                 <li class="nav-item"> <a class="nav-link" asp-area="Admin" asp-controller="Slider" asp-action="Create">Create Slider</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/forms/basic_elements.html">
+                        <a class="nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">
                             <i class="mdi mdi-view-headline menu-icon"></i>
-                            <span class="menu-title">Form elements</span>
+                            <span class="menu-title">Categories</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -275,6 +275,8 @@
     <script src="~/admin/js/jquery.dataTables.js"></script>
     <script src="~/admin//dataTables.bootstrap4.js"></script>
     <!-- End custom js for this page-->
+
+    @RenderSection("Scripts",false)
 </body>
 
 </html>

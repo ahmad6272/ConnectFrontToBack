@@ -37,10 +37,10 @@
         <!-- finish slider -->
 
         <!-- begin shelf -->
-        <div class="container">
-            <div class="row">
+        <div id="products" class="container">
+            <div  class="row">
                 <div id="shelf" class="mt-5 ml-4">
-                    <div class="menu">
+                    <div class="menu col-12">
                         <ul>
                             <li><a style="color: red;" href="#">ALL</a></li>
                             @foreach (Category category in Model.Categories)
@@ -49,7 +49,7 @@
                             }
 
                             <li class="filter">
-                                <button class="border-0 bg-white ml-4">
+                                <button class="border-0 bg-white">
                                     FILTER <i class="fas fa-caret-down"></i>
                                 </button>
                                 <div class="filter_menu elm-collapsed" style="width: 400px; left: -200px;">

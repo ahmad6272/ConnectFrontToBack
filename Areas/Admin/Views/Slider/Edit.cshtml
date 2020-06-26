@@ -1,0 +1,26 @@
+﻿@model Slider
+@{
+    ViewData["Title"] = "Edit";
+}
+
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Select Slider</h3>
+                    <h5>Change This Image</h5>
+                    <img src="~/image/slider/@Model.Image" width="25%" alt="Alternate Text" />
+                    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                    <form class="forms-sample" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label asp-for="Photo"></label>
+                            <input class="form-control" asp-for="Photo" accept="image/*">
+                            <span asp-validation-for="Photo" class="text-danger"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <a asp-action="Index" class="btn btn-danger">Go Back</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

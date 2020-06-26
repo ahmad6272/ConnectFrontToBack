@@ -1,120 +1,86 @@
-$(document).ready(function () {
-    let isTrue = true;
-    $(window).bind('scroll', function () {        
-        if (isTrue) {
-            if ($(window).scrollTop() >= $('#loadMore').offset().top + $('#loadMore').outerHeight() - this.window.innerHeight) {
-                isTrue = false;
-                $.ajax({
-                    url: "/Product/Load?skip=" + skip,
-                    type: "Get",
-                    success: function (response) {
-                        $(".mainList").append(response);
-                        skip += 8;
-                        if (skip >= product_count) {
-                            $("#loadMore").remove();
-                        }
-                    }
-                })
-                isTrue = true;
-            }
-        }     
 
-    })
-    let skip = 8;
-    let product_count = $("#product_count").val();
-    $("#loadMore").click(function () {
-        $.ajax({
-            url: "/Product/Load?skip=" + skip,
-            type: "Get",
-            success: function (response) {
-                $(".mainList").append(response);
-                skip += 8;
-                if (skip >= product_count) {
-                    $("#loadMore").remove();
-                }
-            }
-        })
-    })
+$(document).ready(function () {
 
     // cell
-    $(".card_one a img ").mouseover(function () {
-        $(".one .cash .add_to_card ").removeClass("show")
-        $(".one .cash span").addClass("show")
+    
+    $(".cash ").mouseover(function () {
+        $(".add_to_card ").removeClass("show")
+        $("span").addClass("show")
     })
-    $(".card_one a img").mouseout(function () {
-        $(".one .cash .add_to_card ").addClass("show")
-        $(".one .cash span").removeClass("show")
-    })
-
-    $(".card_two a img ").mouseover(function () {
-        $(".two .cash .add_to_card ").removeClass("show")
-        $(".two .cash span").addClass("show")
+    $(".card .cash").mouseout(function () {
+        $(".add_to_card ").addClass("show")
+        $("span").removeClass("show")
     })
 
-    $(".card_two a img").mouseout(function () {
-        $(".two .cash .add_to_card ").addClass("show")
-        $(".two .cash span").removeClass("show")
-    })
+    // $(".card_two .two .cash").mouseover(function () {
+    //     $(".add_to_card ").removeClass("show")
+    //     $("span").addClass("show")
+    // })
 
-    $(".card_three a img ").mouseover(function () {
-        $(".three .cash .add_to_card ").removeClass("show")
-        $(".three .cash span").addClass("show")
-    })
+    // $(".card_two .two .cash").mouseout(function () {
+    //     $(".add_to_card ").addClass("show")
+    //     $("span").removeClass("show")
+    // })
 
-    $(".card_three a img").mouseout(function () {
-        $(".three .cash .add_to_card ").addClass("show")
-        $(".three .cash span").removeClass("show")
-    })
+    // $(".card_three a img ").mouseover(function () {
+    //     $(".three .cash .add_to_card ").removeClass("show")
+    //     $(".three .cash span").addClass("show")
+    // })
 
-    $(".card_four a img ").mouseover(function () {
-        $(".four .cash .add_to_card ").removeClass("show")
-        $(".four .cash span").addClass("show")
-    })
+    // $(".card_three a img").mouseout(function () {
+    //     $(".three .cash .add_to_card ").addClass("show")
+    //     $(".three .cash span").removeClass("show")
+    // })
 
-    $(".card_four a img").mouseout(function () {
-        $(".four .cash .add_to_card ").addClass("show")
-        $(".four .cash span").removeClass("show")
-    })
+    // $(".card_four a img ").mouseover(function () {
+    //     $(".four .cash .add_to_card ").removeClass("show")
+    //     $(".four .cash span").addClass("show")
+    // })
 
-    $(".card_five a img ").mouseover(function () {
-        $(".five .cash .add_to_card ").removeClass("show")
-        $(".five .cash span").addClass("show")
-    })
+    // $(".card_four a img").mouseout(function () {
+    //     $(".four .cash .add_to_card ").addClass("show")
+    //     $(".four .cash span").removeClass("show")
+    // })
 
-    $(".card_five a img").mouseout(function () {
-        $(".five .cash .add_to_card ").addClass("show")
-        $(".five .cash span").removeClass("show")
-    })
+    // $(".card_five a img ").mouseover(function () {
+    //     $(".five .cash .add_to_card ").removeClass("show")
+    //     $(".five .cash span").addClass("show")
+    // })
 
-    $(".card_six a img ").mouseover(function () {
-        $(".six .cash .add_to_card ").removeClass("show")
-        $(".six .cash span").addClass("show")
-    })
+    // $(".card_five a img").mouseout(function () {
+    //     $(".five .cash .add_to_card ").addClass("show")
+    //     $(".five .cash span").removeClass("show")
+    // })
 
-    $(".card_six a img").mouseout(function () {
-        $(".six .cash .add_to_card ").addClass("show")
-        $(".six .cash span").removeClass("show")
-    })
+    // $(".card_six a img ").mouseover(function () {
+    //     $(".six .cash .add_to_card ").removeClass("show")
+    //     $(".six .cash span").addClass("show")
+    // })
 
-    $(".card_seven a img ").mouseover(function () {
-        $(".seven .cash .add_to_card ").removeClass("show")
-        $(".seven .cash span").addClass("show")
-    })
+    // $(".card_six a img").mouseout(function () {
+    //     $(".six .cash .add_to_card ").addClass("show")
+    //     $(".six .cash span").removeClass("show")
+    // })
 
-    $(".card_seven a img").mouseout(function () {
-        $(".seven .cash .add_to_card ").addClass("show")
-        $(".seven .cash span").removeClass("show")
-    })
+    // $(".card_seven a img ").mouseover(function () {
+    //     $(".seven .cash .add_to_card ").removeClass("show")
+    //     $(".seven .cash span").addClass("show")
+    // })
 
-    $(".card_eight a img ").mouseover(function () {
-        $(".eight .cash .add_to_card ").removeClass("show")
-        $(".eight .cash span").addClass("show")
-    })
+    // $(".card_seven a img").mouseout(function () {
+    //     $(".seven .cash .add_to_card ").addClass("show")
+    //     $(".seven .cash span").removeClass("show")
+    // })
 
-    $(".card_eight a img").mouseout(function () {
-        $(".eight .cash .add_to_card ").addClass("show")
-        $(".eight .cash span").removeClass("show")
-    })
+    // $(".card_eight a img ").mouseover(function () {
+    //     $(".eight .cash .add_to_card ").removeClass("show")
+    //     $(".eight .cash span").addClass("show")
+    // })
+
+    // $(".card_eight a img").mouseout(function () {
+    //     $(".eight .cash .add_to_card ").addClass("show")
+    //     $(".eight .cash span").removeClass("show")
+    // })
 
     // filter in shelf
     // $(".filter_menu").hide();
@@ -325,7 +291,6 @@ $(function () {
             $("html, body").animate({ scrollTop: 0 }, "slow")
         })
     }
-   
 });
 
 $(function () {

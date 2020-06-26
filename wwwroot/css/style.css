@@ -52,7 +52,7 @@ nav #menu .shopping_bag a {
 }
 
 nav #menu .nav-elm-item {
-  position: relative;
+    position: relative;
 }
 
 nav #menu .nav-elm-item .elm-collapsed {
@@ -246,7 +246,7 @@ main #shelf .menu ul .filter .title {
   line-height: 1.363em;
 }
 
-main .cell .card {
+/*main .cell .card {
   margin-bottom: 110px;
 }
 
@@ -323,7 +323,7 @@ main .cell .card .card-body .add_to_card a {
 
 main .cell .card .card-body .show {
   display: none;
-}
+}*/
 
 main .sector {
   background-color: #f5ebeb;
@@ -1383,4 +1383,12 @@ main #tab .tab-content .tab-pane .reviews .card .card-body h5 {
 main #tab .tab-content .tab-pane .reviews .card .card-body p {
   font-family: 'Lora',serif;
 }
+
+
+
+
+
+
+
 /*# sourceMappingURL=style.css.map */
+

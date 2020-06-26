@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ConnectFrontToBack.DAL;
+using ConnectFrontToBack.Models;
 using ConnectFrontToBack.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace ConnectFrontToBack.Controllers
 {
@@ -28,6 +30,50 @@ namespace ConnectFrontToBack.Controllers
             return View(model);
         }
 
+        public async Task<IActionResult> AddBasket(int? id)
+        {
+            if (id == null) return NotFound();
+            Product product = await _db.Products.FindAsync(id);
+            if (product == null) return NotFound();
+
+            List<ProductBasketVM> products;
+            string exBasket = Request.Cookies["basket"];
+            if (exBasket == null)
+            {
+                products = new List<ProductBasketVM>();
+            }
+            else
+            {
+                products = JsonConvert.DeserializeObject<List<ProductBasketVM>>(exBasket);
+            }
+
+            ProductBasketVM check = products.FirstOrDefault(p => p.Id == id);
+            if (check == null)
+            {
+                ProductBasketVM pro = new ProductBasketVM
+                {
+                    Id = product.Id,
+                    Image = product.Image,
+                    Title = product.Title,
+                    Price = product.Price,
+                    Count = 1,
+                };
+                products.Add(pro);
+            }
+            else
+            {
+                check.Count++;
+            }
+            
+            string basket = JsonConvert.SerializeObject(products);
+            Response.Cookies.Append("basket", basket, new CookieOptions { MaxAge = TimeSpan.FromDays(7) });
+            return RedirectToAction(nameof(Index));
+
+        }
+        public IActionResult Basket()
+        {
+            return View(Request.Cookies["basket"]);
+        }
         // GET: Home/Details/5
         public ActionResult Details(int id)
         {

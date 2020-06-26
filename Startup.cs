@@ -24,6 +24,10 @@ namespace ConnectFrontToBack
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(20);
+            });
             services.AddDbContext<AppDbContext>(options =>
             {
                 options.UseSqlServer(_config["ConnectionStrings:DefaultConnection"]);
