@@ -74,6 +74,14 @@ namespace ConnectFrontToBack.Controllers
         {
             return View(Request.Cookies["basket"]);
         }
+
+        public IActionResult Error()
+        {
+            return Content("Error page");
+        }
+
+
+
         // GET: Home/Details/5
         public ActionResult Details(int id)
         {

@@ -18,8 +18,13 @@ using ConnectFrontToBack.Models;
 
 #line default
 #line hidden
+#line 2 "C:\Users\Ahmad Dadashzada\Desktop\ConnectFrontToBack\Areas\Admin\Views\_ViewImports.cshtml"
+using ConnectFrontToBack.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fcfa4b3ce49dabb19e2b2424969d81876388d4aa", @"/Areas/Admin/Views/Slider/Delete.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4a7e62b084096d0a1b290a8e2c17209d10894991", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"de097494db60c295e3738965279314c1f6765b9c", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Slider_Delete : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Slider>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("width", new global::Microsoft.AspNetCore.Html.HtmlString("25%"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -64,7 +69,7 @@ using ConnectFrontToBack.Models;
             WriteLiteral("\r\n<div class=\"row\">\r\n    ");
             EndContext();
             BeginContext(82, 74, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "849b9b8fa94141238ad53d01e75498d9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e740bd5e554948f3a246680e2b0cbf6a", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -91,7 +96,7 @@ AddHtmlAttributeValue("", 107, Model.Image, 107, 12, false);
             WriteLiteral("\r\n</div>\r\n<div class=\"row mt-2\">\r\n    ");
             EndContext();
             BeginContext(194, 56, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2e977b6f836749ac9ca2e156c294130d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "425ae87c973b4973beebc80e366b3533", async() => {
                 BeginContext(239, 7, true);
                 WriteLiteral("go back");
                 EndContext();
@@ -114,7 +119,7 @@ AddHtmlAttributeValue("", 107, Model.Image, 107, 12, false);
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(256, 152, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc2c572ad8e2449fb399cc21215c4e3a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3c86a933e4d04ad2a1fdb5cd2a61c7f9", async() => {
                 BeginContext(312, 89, true);
                 WriteLiteral("\r\n        <button type=\"submit\" class=\"btn btn-inverse-danger mr-2\">Delete</button>\r\n    ");
                 EndContext();

@@ -13,79 +13,79 @@ $(document).ready(function () {
     })
 
     // $(".card_two .two .cash").mouseover(function () {
-    //     $(".add_to_card ").removeClass("show")
-    //     $("span").addClass("show")
+    //     $(".add_to_card ").removeclass("show")
+    //     $("span").addclass("show")
     // })
 
     // $(".card_two .two .cash").mouseout(function () {
-    //     $(".add_to_card ").addClass("show")
-    //     $("span").removeClass("show")
+    //     $(".add_to_card ").addclass("show")
+    //     $("span").removeclass("show")
     // })
 
     // $(".card_three a img ").mouseover(function () {
-    //     $(".three .cash .add_to_card ").removeClass("show")
-    //     $(".three .cash span").addClass("show")
+    //     $(".three .cash .add_to_card ").removeclass("show")
+    //     $(".three .cash span").addclass("show")
     // })
 
     // $(".card_three a img").mouseout(function () {
-    //     $(".three .cash .add_to_card ").addClass("show")
-    //     $(".three .cash span").removeClass("show")
+    //     $(".three .cash .add_to_card ").addclass("show")
+    //     $(".three .cash span").removeclass("show")
     // })
 
     // $(".card_four a img ").mouseover(function () {
-    //     $(".four .cash .add_to_card ").removeClass("show")
-    //     $(".four .cash span").addClass("show")
+    //     $(".four .cash .add_to_card ").removeclass("show")
+    //     $(".four .cash span").addclass("show")
     // })
 
     // $(".card_four a img").mouseout(function () {
-    //     $(".four .cash .add_to_card ").addClass("show")
-    //     $(".four .cash span").removeClass("show")
+    //     $(".four .cash .add_to_card ").addclass("show")
+    //     $(".four .cash span").removeclass("show")
     // })
 
     // $(".card_five a img ").mouseover(function () {
-    //     $(".five .cash .add_to_card ").removeClass("show")
-    //     $(".five .cash span").addClass("show")
+    //     $(".five .cash .add_to_card ").removeclass("show")
+    //     $(".five .cash span").addclass("show")
     // })
 
     // $(".card_five a img").mouseout(function () {
-    //     $(".five .cash .add_to_card ").addClass("show")
-    //     $(".five .cash span").removeClass("show")
+    //     $(".five .cash .add_to_card ").addclass("show")
+    //     $(".five .cash span").removeclass("show")
     // })
 
     // $(".card_six a img ").mouseover(function () {
-    //     $(".six .cash .add_to_card ").removeClass("show")
-    //     $(".six .cash span").addClass("show")
+    //     $(".six .cash .add_to_card ").removeclass("show")
+    //     $(".six .cash span").addclass("show")
     // })
 
     // $(".card_six a img").mouseout(function () {
-    //     $(".six .cash .add_to_card ").addClass("show")
-    //     $(".six .cash span").removeClass("show")
+    //     $(".six .cash .add_to_card ").addclass("show")
+    //     $(".six .cash span").removeclass("show")
     // })
 
     // $(".card_seven a img ").mouseover(function () {
-    //     $(".seven .cash .add_to_card ").removeClass("show")
-    //     $(".seven .cash span").addClass("show")
+    //     $(".seven .cash .add_to_card ").removeclass("show")
+    //     $(".seven .cash span").addclass("show")
     // })
 
     // $(".card_seven a img").mouseout(function () {
-    //     $(".seven .cash .add_to_card ").addClass("show")
-    //     $(".seven .cash span").removeClass("show")
+    //     $(".seven .cash .add_to_card ").addclass("show")
+    //     $(".seven .cash span").removeclass("show")
     // })
 
     // $(".card_eight a img ").mouseover(function () {
-    //     $(".eight .cash .add_to_card ").removeClass("show")
-    //     $(".eight .cash span").addClass("show")
+    //     $(".eight .cash .add_to_card ").removeclass("show")
+    //     $(".eight .cash span").addclass("show")
     // })
 
     // $(".card_eight a img").mouseout(function () {
-    //     $(".eight .cash .add_to_card ").addClass("show")
-    //     $(".eight .cash span").removeClass("show")
+    //     $(".eight .cash .add_to_card ").addclass("show")
+    //     $(".eight .cash span").removeclass("show")
     // })
 
     // filter in shelf
     // $(".filter_menu").hide();
     // $(".filter").click(function () {
-    //     $(".filter_menu").removeClass("d-none");
+    //     $(".filter_menu").removeclass("d-none");
     //     $(".filter_menu").toggle(1000)
     // })
 

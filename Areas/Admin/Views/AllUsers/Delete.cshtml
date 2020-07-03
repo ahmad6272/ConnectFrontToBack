@@ -1,0 +1,31 @@
+﻿@model UserVM
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<div class="col-12">
+    <div class="form-group">
+        <label asp-for="Fullname"></label>
+        <input class="form-control" asp-for="Fullname" placeholder="User Fullname" autocomplete="off">
+        <span asp-validation-for="Fullname" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input class="form-control" asp-for="Email" placeholder="User Email" autocomplete="off">
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="UserName"></label>
+        <input class="form-control" asp-for="UserName" placeholder="User Email" autocomplete="off">
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+</div>
+<div class="col-12 d-flex">
+    <a asp-action="Index" class="btn btn-danger">Go Back</a>
+    <form class="forms-sample ml-2" method="post" action="">
+        <button type="submit" class="btn btn-inverse-danger mr-2">Delete</button>
+    </form>
+</div>
+</div>

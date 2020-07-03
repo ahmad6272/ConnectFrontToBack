@@ -18,8 +18,13 @@ using ConnectFrontToBack.Models;
 
 #line default
 #line hidden
+#line 2 "C:\Users\Ahmad Dadashzada\Desktop\ConnectFrontToBack\Areas\Admin\Views\_ViewImports.cshtml"
+using ConnectFrontToBack.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"94c7a097b50966e39762ca19c09bd6ce0ce22cde", @"/Areas/Admin/Views/Dashboard/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4a7e62b084096d0a1b290a8e2c17209d10894991", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"de097494db60c295e3738965279314c1f6765b9c", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Dashboard_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

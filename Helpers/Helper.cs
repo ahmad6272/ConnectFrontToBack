@@ -16,5 +16,12 @@ namespace ConnectFrontToBack.Helpers
                 System.IO.File.Delete(filePath);
             }
         }
+
+        public enum UserRoles
+        {
+            Admin,
+            Worker,
+            Deleted
+        }
     }
 }

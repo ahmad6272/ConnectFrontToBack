@@ -18,8 +18,13 @@ using ConnectFrontToBack.Models;
 
 #line default
 #line hidden
+#line 2 "C:\Users\Ahmad Dadashzada\Desktop\ConnectFrontToBack\Areas\Admin\Views\_ViewImports.cshtml"
+using ConnectFrontToBack.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"584e6079a8454ebb6cb030f550957fc745abe3cc", @"/Areas/Admin/Views/Shared/_Validation.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4a7e62b084096d0a1b290a8e2c17209d10894991", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"de097494db60c295e3738965279314c1f6765b9c", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Shared__Validation : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

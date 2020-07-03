@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using ConnectFrontToBack.DAL;
 using ConnectFrontToBack.Helpers;
 using ConnectFrontToBack.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ConnectFrontToBack.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class SliderController : Controller
     {
         private readonly AppDbContext _db;

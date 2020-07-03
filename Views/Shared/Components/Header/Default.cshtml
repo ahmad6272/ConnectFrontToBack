@@ -112,40 +112,33 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-elm-item blog">
-                            <a href="#">BLOG</a>
-                            <div class="blog_menu elm-collapsed">
-                                <div class="drop_blog_menu">
-                                    <ul>
-                                        <li><a href="#">Masonry</a></li>
-                                        <li><a href="#">Standart</a></li>
-                                        <li><a href="#">Post Types</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-elm-item elm">
-                            <a href="#">ELEMENTS</a>
-                            <div class="elements_menu elm-collapsed">
-                                <div class="drop_elements_menu">
-                                    <ul>
-                                        <li><a href="#">Classic</a></li>
-                                        <li><a href="#">Infographic</a></li>
-                                        <li><a href="#">Interactive</a></li>
-                                        <li><a href="#">Typography</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-elm-item search "> <i class="fas fa-search"></i> </li>
-                        <li class="nav-elm-item shopping_bag">
-                            <a class="pr-1" asp-controller="Home" asp-action="Basket">
-                                <i class="fas fa-shopping-bag"></i>
-                            </a>
-                            <sup class="rounded-circle">@ViewBag.BasketCount</sup>
-                            <a href="">CART($@ViewBag.BasketPrice)</a>
-                        </li>
-                    </ul>
+
+                        <li class="nav-elm-item elm text-danger">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                @ViewBag.UserFullname
+
+                            <li class="nav-elm-item blog">
+                                <a asp-controller="UserAccount" asp-action="Logout">LOGOUT</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-elm-item blog">
+                                <a asp-controller="UserAccount" asp-action="Login">SING IN</a>
+                            </li>
+                        }
+                            </li>
+
+                            <li class="nav-elm-item search "> <i class="fas fa-search"></i> </li>
+                            <li class="nav-elm-item shopping_bag">
+                                <a class="pr-1" asp-controller="Home" asp-action="Basket">
+                                    <i class="fas fa-shopping-bag"></i>
+                                </a>
+                                <sup class="rounded-circle">@ViewBag.BasketCount</sup>
+                                <a href="">CART($@ViewBag.BasketPrice)</a>
+                            </li>
+                        </ul>
 
                 </div>
             </div>

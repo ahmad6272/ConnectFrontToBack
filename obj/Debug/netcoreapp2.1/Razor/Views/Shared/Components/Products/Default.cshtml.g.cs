@@ -71,12 +71,12 @@ using ConnectFrontToBack.ViewModels;
             WriteLiteral("            <div class=\"card card_one border-0\" style=\"width: 15rem; height: 19.5rem;\">\r\n               \r\n                    <div class=\"image\">\r\n                        ");
             EndContext();
             BeginContext(355, 272, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a013efbb26ed4df89ac4971e742a81a4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "acaf6541da884042b8c83c33e807a422", async() => {
                 BeginContext(430, 30, true);
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(460, 137, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ccfb226a83634763928a71d5d52b9d37", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c2deed2c9ae244489133d87f8aa75437", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

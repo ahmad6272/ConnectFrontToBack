@@ -66,7 +66,7 @@ using ConnectFrontToBack.ViewModels;
             WriteLiteral("            <div class=\"card card_one border-0\" style=\"width: 15rem; height: 19.5rem;\">\r\n                <div class=\"image\">\r\n                    <a href=\"#\">\r\n                        ");
             EndContext();
             BeginContext(352, 133, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "1e45fb7a63a04543b2ff9d82144e08ca", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e7dc3c91973a4102bd55fa3e3fff70e4", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

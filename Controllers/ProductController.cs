@@ -4,11 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using ConnectFrontToBack.DAL;
 using ConnectFrontToBack.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ConnectFrontToBack.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         private readonly AppDbContext _db;
